@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    
+}
+
+
+div{
+    /* border: 1px solid red; */
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #21A5D5;
+    padding: 1rem;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    gap: 2rem;
+}
+
+.email{
+    display: flex;
+    gap: 1rem;
+}
+.address{
+    display: flex;
+    gap: 1rem;
+}
+
+.icons{
+    display: flex;
+    gap: 2rem;
+    color: rgba(38, 122, 153, 0.8);
+}
+
+.info p, .address p{
+    color: white;
+}
+
+
+.nav-parent{
+    box-shadow: 3px 3px 10px 1px lightgray;
+    padding: 1rem;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+
+
+}
+
+.button-contact button{
+    background-color: #21A5D5;
+    border: none;
+    color: white;
+    padding: 0.9rem 2rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+
+.button-contact button:hover{
+    background-color: black;
+}
+
+.list-icon{
+    display: none;
+}
+
+
+/* .anim{
+    font-size: 4rem;
+
+    text-align: center;
+    background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2k4N3dtaTh2dnpyZDlyOXB0ZnJlMDFraWx3emI0ZDdoeW02ZzN6ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jn7oM8FYWXqMnZWpoH/giphy.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+.title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.hero h2{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+
+.btn button{
+    background: #21A5D5;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 25px 40px;
+    text-transform: capitalize;
+    color: white;
+    
+}
+
+button{
+    transition: all 0.7s;
+}
+
+.btn button:hover{
+    background-color: black;
+}
+
+.curved{
+    background-color: #21A5D5;
+    color: white;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2rem;
+}
+
+.curved h1{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.images{
+    color: black;
+    background-color: white;
+    display: flex;
+    padding: 1rem;
+    gap: 10rem;
+    
+}
+
+
+.sponsor{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.left h1{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.right{
+    display: flex;
+    gap: 3rem;
+}
+
+
+.left-imgs,.right-imgs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.left p:nth-child(3){
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.left p:nth-child(1){
+    font-size: 1.4rem;
+    color: gray;
+
+}
+
+.right{
+    /* width: 50%; */
+    justify-content: center;
+    gap: 6rem;
+}
+
+
+@media only screen and (max-width:800px){
+    header{
+        justify-content: space-between;
+    }
+    .list-icon{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #21A5D5;
+        color: white;
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .title{
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .hero h2{
+        font-size: 2rem;
+    }
+
+    .title-image img{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .curved{
+        padding: 1rem;
+    }
+
+    .images{
+        width: 100%;
+        padding: 0.5rem;
+        overflow-x:scroll;
+        gap: 8rem;
+    }
+
+    .sponsor{
+        flex-direction: column;
+    }
+    
+    .left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .left h1{
+        font-size: 2rem;
+    }
+
+    .left p{
+        font-size: 1rem !important;
+    }
+    
+
+
+   
+}
+
+@media only screen and (max-width:700px){
+    .info{
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    .list-icon{
+        display: block;
+    }
+
+    nav ul,.button-contact{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+
+
+
+
+}
