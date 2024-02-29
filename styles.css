@@ -263,7 +263,7 @@ button{
     }
 
     .hero h2{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .title-image img{
@@ -299,6 +299,12 @@ button{
     .left p{
         font-size: 1rem !important;
     }
+
+    .anim{
+    background-image: url('https://www.icegif.com/wp-content/uploads/illusion-icegif-9.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
     
 
 
