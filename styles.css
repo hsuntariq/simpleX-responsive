@@ -224,6 +224,13 @@ button{
 }
 
 
+.anim{
+    background-image: url('https://www.icegif.com/wp-content/uploads/illusion-icegif-9.gif');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 @media only screen and (max-width:800px){
     header{
         justify-content: space-between;
